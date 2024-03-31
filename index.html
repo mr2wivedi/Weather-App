@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <h1>Weather App</h1>
+    <div class="tab-container">
+        <p class="tab">Your Weather</p>
+        <p class="tab"> Search Weather</p>
+    </div>
+    <div class="weather-container">
+
+        <div class="location-container">
+            <img src="assets/map.png" width="100" height="100" loading="lazy">
+            <p>Grant Location Access</p>
+            <p>Allow access to your location to get weather information</p>
+            <button class="btn">Grant Access</button>
+    
+        </div>
+
+        <div class="search-weather-container">
+            <input placeholder="Search for city....">
+            <button class="btn"> 
+                <img src="assets/tool.png" width="20" height="20" loading="lazy">
+            </button>
+        </div>
+
+        <div class="loading-screen-container">
+            <img src="assets/load-8510_256.gif" width="150" height="150">
+            <p>Please wait...Loading</p>
+        </div>
+        <div class="weather-information-container">
+            <div class="city-container">
+                <p id="city"></p>
+                <img id="country-flag">
+            </div>
+            <p id="weather"></p>
+            <img id="weather-image">
+            <p id="temperature"></p>
+            <div class="weather-details-container">
+                <div class="parameter" id="windspeed">
+                    <img src="assets/winds-weather-symbol.png" width="40" height="40" >
+                    <p>WINDSPEED</p>
+                    <p id="wind-data"></p>
+                </div>
+                <div class="parameter" id="humidity">
+                    <img src="assets/humidity.png" width="40" height="40">
+                    <p>HUMIDITY</p>
+                    <p id="humidity-data"></p>
+                </div>
+                <div class="parameter" id="clouds">
+                    <img src="assets/clouds_8691186.png" width="40" height="40">
+                    <p>CLOUDS</p>
+                    <p id="clouds-data"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
