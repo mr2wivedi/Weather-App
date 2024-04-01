@@ -10,13 +10,8 @@
 <div class="wrapper">
     <h1>Weather App</h1>
     <div class="tab-container">
-<<<<<<< HEAD
         <p class="tab" id="user-tab">Your Weather</p>
         <p class="tab" id="search-tab"> Search Weather</p>
-=======
-        <p class="tab">Your Weather</p>
-        <p class="tab"> Search Weather</p>
->>>>>>> 0a9af2db1d8b76740f425e484c1fdad3ee15719d
     </div>
     <div class="weather-container">
 
@@ -24,16 +19,16 @@
             <img src="assets/map.png" width="100" height="100" loading="lazy">
             <p>Grant Location Access</p>
             <p>Allow access to your location to get weather information</p>
-            <button class="btn">Grant Access</button>
+            <button class="btn" id="grant-access">Grant Access</button>
     
         </div>
 
-        <div class="search-weather-container">
-            <input placeholder="Search for city....">
-            <button class="btn"> 
+        <form class="search-weather-container">
+            <input placeholder="Search for city...." id="city-name">
+            <button class="btn" id="search-btn" type="submit"> 
                 <img src="assets/tool.png" width="20" height="20" loading="lazy">
             </button>
-        </div>
+        </form>
 
         <div class="loading-screen-container">
             <img src="assets/load-8510_256.gif" width="150" height="150">
