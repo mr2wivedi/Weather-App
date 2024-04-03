@@ -53,7 +53,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-block:4rem;
+    margin-block:2rem;
 }
 .btn{
     all: unset;
@@ -65,8 +65,9 @@ h1{
     cursor: pointer;
     padding: 10px 30px;
 }
+
 .location-container{
-    display: flex;
+    display: none;
 }
 
 .location-container.active{
@@ -74,3 +75,56 @@ h1{
     flex-direction: column;
     align-items: center;
 }
+
+.location-container img{
+    margin-bottom:10px;
+}
+#access{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+
+}
+
+#info{
+    font-size: .80rem;
+    font-weight:lighter;
+    opacity: .70;
+    letter-spacing:1px ;
+}
+
+#grant-access{
+    margin: 20px 10px;
+}
+
+
+.search-weather-container{
+    display: none;
+}
+
+.search-weather-container.active{
+    display: flex;
+    width: 500px;
+    height: 30px;
+    margin: 20px auto;
+    
+}
+
+#city-name{
+    font-size: .70rem;
+    padding-left:20px;
+    width: 500px;
+    background-color: var(--colorLight1);
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+#search-btn{
+    border-radius: 50px;
+}
+
+#search-btn img{
+    transform: translateY(-4px);
+}
+
