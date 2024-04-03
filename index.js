@@ -21,6 +21,7 @@ const API_KEY = "898b6975708087bec2a7dc4725cdd1e7"
 
 let currentTab = userTab
 currentTab.classList.add("current-tab")
+locationAccess.classList.add('active')
 
 function switchTab(clickedTab){
 
@@ -89,13 +90,13 @@ async function fetchWeatherInfo(cordinates){
 
 function renderWeatherInfo(infoWeather){
     city.innerText = infoWeather?.name
-    countryFlag.src =`https://flagcdn.com/16x12/${infoWeather?.sys?.country.toLowerCase()}.png`
+    countryFlag.src =`https://flagcdn.com/160x120/${infoWeather?.sys?.country.toLowerCase()}.png`
     weather.innerText=infoWeather?.weather?.[0]?.description
     weatherImg.src = `https://openweathermap.org/img/wn/${infoWeather?.weather?.[0]?.icon}.png`
-    temperature.innerText=infoWeather?.main?.temp
-    windData.innerText = infoWeather?.wind?.speed
-    humidityData.innerText=infoWeather?.main?.humidity
-    cloudsData.innerText=infoWeather?.clouds?.all
+    temperature.innerText=`${infoWeather?.main?.temp} °C`
+    windData.innerText =`${infoWeather?.wind?.speed} m/s` 
+    humidityData.innerText=`${infoWeather?.main?.humidity} %` 
+    cloudsData.innerText=`${infoWeather?.clouds?.all} %`
 } 
 
 function getlocation(){
