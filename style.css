@@ -235,3 +235,12 @@ h1{
     font-size: 2.75rem;
     font-weight: 700;
 }
+
+.error-container{
+    display: none;
+}
+
+.error-container.active{
+    display: flex;
+    align-items: center;
+}
